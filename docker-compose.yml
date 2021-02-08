@@ -16,8 +16,6 @@ services:
       - ./app:/var/www/html
       - ./infrastructure/web/nginx/conf/conf.d/default.conf:/etc/nginx/conf.d/default.conf
       - ./infrastructure/web/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
-      # - ./infrastructure/web/nginx/logs:/var/log/nginx/error.log
-      # - ./infrastructure/web/nginx/logs:/var/log/nginx/access.log
     depends_on:
       - court-finder-api-app
       - court-finder-api-db
